@@ -2,5 +2,15 @@
 # Пример:
 # - [2, 3, 5, 9, 3] -> на нечётных позициях элементы 3 и 9, ответ: 12
 
-choice=input(("Введите элементы массива для перемножения:")).split(" ")
-choice_int=[int(item) for item in choice]
+listt=input(("Введите элементы массива через пробел:")).split(" ")
+list_int=[int(item) for item in listt]
+print(list_int)
+
+def summ_not_ev(list):
+    summ = int (0)
+    for i in range(0,len(list_int)):
+        if i % 2 != 0:
+            summ += list_int[i]
+    print(f'Сумма элементов на нечетных позициях равна {summ}')
+
+summ_not_ev(list_int)
