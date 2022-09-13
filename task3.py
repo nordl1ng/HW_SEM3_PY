@@ -7,9 +7,10 @@ listt=input(("Введите элементы массива через проб
 list_float=[float(item) for item in listt]
 
 import math
-max=0
-min=1000
-for i in range(0,len(list_float)):
+a, b = math.modf(list_float[0])
+max=a
+min=a
+for i in range(1,len(list_float)):
     a, b = math.modf(list_float[i])
     if a > max: 
         max = a
