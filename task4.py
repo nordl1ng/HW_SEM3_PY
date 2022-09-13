@@ -3,3 +3,10 @@
 # - 45 -> 101101
 # - 3 -> 11
 # - 2 -> 10
+
+number = int(input("Введите число для преобразования: "))
+b = ''
+while number > 0:
+    b = str(number % 2) + b
+    number = number // 2
+print(f"В двоичной: {b}")
