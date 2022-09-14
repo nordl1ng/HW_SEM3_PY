@@ -8,5 +8,5 @@ number = int(input("Введите число для преобразовани�
 b = ''
 while number > 0:
     b = str(number % 2) + b
-    number = number // 2
+    number //= 2
 print(f"В двоичной: {b}")
