@@ -8,8 +8,7 @@ print(list_int)
 
 def summ_not_ev(list):
     summ = int (0)
-    for i in range(0,len(list_int)):
-        if i % 2 != 0:
+    for i in range(1,len(list_int),2):
             summ += list_int[i]
     print(f'Сумма элементов на нечетных позициях равна {summ}')
 
