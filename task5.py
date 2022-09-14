@@ -8,11 +8,23 @@ h0 = 0
 h1 = 1
 fib = []
 fib.append(0)
+fib.append(1)
 while i < k - 1:
     h = h0 + h1 
     fib.append(h)
-    fib= [h*-1] + fib
     h0=h1
     h1=h
     i = i + 1
-print(fib)
+
+fibi= []
+i=-1
+h1=1
+h0=0
+while (0 > i > k*-1-1):
+    h = h1 - h0 
+    fibi.insert(0,h)
+    h1=h0
+    h0=h
+    i = i - 1
+res=fibi+fib
+print(res)
